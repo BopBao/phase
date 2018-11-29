@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Phase</string>
+    <string name="routine_name">Name Your Routine: </string>
+    <string name="exercise_name">Name This Exercise</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="rest">Rest</string>
+    <string name="rpe">RPE: </string>
+    <string name="create_exercise">Create Exercise</string>
+
+    <string name="empty_error">Required</string>
+</resources>

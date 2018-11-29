@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+	          android:id="@+id/name" android:hint="@string/exercise_name"
+	          android:inputType="text"
+	          app:layout_constraintTop_toTopOf="parent" android:layout_margin="@dimen/normal_margin"
+	          app:layout_constraintLeft_toLeftOf="parent" />
+	<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+	          android:id="@+id/sets" android:hint="@string/sets"
+	          android:inputType="number"
+	          app:layout_constraintTop_toBottomOf="@+id/name" android:layout_margin="@dimen/normal_margin"
+	          app:layout_constraintLeft_toLeftOf="parent" />
+	<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+	          android:id="@+id/reps" android:hint="@string/reps"
+	          android:inputType="number"
+	          app:layout_constraintTop_toBottomOf="@+id/sets" android:layout_margin="@dimen/normal_margin"
+	          app:layout_constraintLeft_toLeftOf="parent" />
+	<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+	          android:id="@+id/rest" android:hint="@string/rest"
+	          android:inputType="time"
+	          app:layout_constraintTop_toBottomOf="@+id/reps" android:layout_margin="@dimen/normal_margin"
+	          app:layout_constraintLeft_toLeftOf="parent" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+	          android:text="@string/rpe" android:id="@+id/rpe_text"
+	          app:layout_constraintTop_toBottomOf="@+id/rest" android:layout_margin="@dimen/normal_margin"
+	          app:layout_constraintLeft_toLeftOf="parent" />
+	<Spinner android:layout_width="wrap_content" android:layout_height="wrap_content"
+	         android:id="@+id/rpe"
+	         app:layout_constraintTop_toBottomOf="@+id/rest" android:layout_margin="@dimen/normal_margin"
+	         app:layout_constraintLeft_toRightOf="@+id/rpe_text" />
+
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:id="@+id/create_button" android:text="@string/create_exercise"
+	        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@+id/rpe"
+			android:layout_margin="@dimen/normal_margin"
+	/>
+
+
+</android.support.constraint.ConstraintLayout>
